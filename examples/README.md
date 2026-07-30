@@ -15,12 +15,6 @@
 - 26 份 references（10 區塊主題 + 思維引擎 + 兩集訪談對接）
 - GitHub：（持有者私有 repo）
 
-### 英文版
-
-- 技能包路徑：`_agent/skills/naval-ravikant-en/`
-- 26 份 references
-- GitHub：（持有者私有 repo）
-
 ### 做法重點
 
 - **素材來源**：書（《納瓦爾寶典》）+ 兩集 Naval Podcast（2025-10-14 In the Arena、2026-04-29 Vibe Coding）+ Modern Wisdom Podcast 訪談 2025
@@ -49,7 +43,7 @@
 
 未來會有：
 
-- 湯老師（合作對象 / 同事類型，去識別化）
+- A 夥伴（合作對象 / 同事類型，去識別化）
 - Charlie Munger（名人類型，英文素材）
 - Schopenhauer（名人類型，古典文本）
 
