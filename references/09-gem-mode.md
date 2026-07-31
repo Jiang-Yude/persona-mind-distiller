@@ -237,7 +237,7 @@ wc -m references/*.md
 
 ## 跟其他 references 的關係
 
-- `03-ten-blocks-template.md`（10 區塊基本人格）→ 提煉內容
+- `03-ten-blocks-template.md`（十區塊人格設定檔）→ 提煉內容
 - `04-mind-engine-template.md`（思維引擎）→ 提煉內容
 - `07-output-formats.md`（四種角色定位：顧問/助理/夥伴/同事）→ 決定關係動態
 - `09-gem-mode.md`（本檔）→ **打包格式**

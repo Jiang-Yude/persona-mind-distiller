@@ -1,10 +1,8 @@
 # 人格思維提煉技能包（persona-mind-distiller）
 
-把書、論文、影片、Podcast、自己/他人想法等素材，**提煉成擬人化的 AI 顧問**。
+**這套技能包是編譯器**：把書、論文、影片、Podcast、自己/他人想法等原始素材，編譯成十區塊的人格設定檔。
 
-這份技能包的核心不是讓 AI 假裝成某個真人，而是把公開、可追溯的來源整理成一個有邊界、有判斷原則、有更新機制的 AI 顧問。
-
-> **English**: see [English Summary](#english-summary) at the bottom. The skill body is maintained in Traditional Chinese only; the previous English edition was retired on 2026-07-30.
+設定檔是事先完成的成品，對話時直接讀取，不臨時提煉、不現場生成。這份技能包的核心不是讓 AI 假裝成某個真人，而是把公開、可追溯的來源整理成一個有邊界、有判斷原則、有更新機制的 AI 顧問。
 
 ---
 
@@ -45,6 +43,18 @@
 
 ---
 
+## 最新架構（v1.6）
+
+- **編譯器 → 成品**。技能包是編譯器，人格設定檔是預先完成的成品。對話時只讀成品，不臨時提煉。
+- **十區塊人格設定檔**。第一區「快速摘要與出場定位」，第十區「人設反差點」（正式項目，沒有來源就標 `待補來源`）。第 3、5、9 區合起來就是思維引擎。
+- **八模組是編譯階段工具**。核心心智模型、決策啟發式、表達風格、回答工作流、智識譜系、內在張力、來源追溯、框架衝突處理。結果事先寫回十區塊的對應位置，不是成品後方的獨立層。
+- **控制層**。十一認識論邊界、十二 Anti-patterns 摘要、十三一頁速查。不是十區塊的一部分。
+- **只維護與推廣中文版**。公開介紹不再保留英文入口或英文摘要；舊英文 repo 僅作歷史封存。
+
+精確事實、數學、程式與時間敏感資料先由中性流程查證，再交人格設定檔解讀，人格不自行補事實。
+
+---
+
 ## 安全邊界
 
 - 不冒充真人本人
@@ -72,28 +82,3 @@
 ## 作者
 
 江昱德（Jiang Yude）—— AI 辦公室 / 數位分身小聚 主理人
-
----
-
-## English Summary
-
-**persona-mind-distiller** turns source material (books, papers, talks, podcasts, your own notes) into an anthropomorphic AI advisor with traceable sources, explicit judgment rules, stated boundaries, and a defined update path. The goal is not an AI pretending to be a real person; it is an advisor that is controllable, stable and auditable. When it cannot support an answer, it says "I don't know" instead of filling the gap.
-
-**Language policy**: the skill body is maintained in Traditional Chinese only. This summary covers the architecture and what each version adds; the reference files are not translated. A parallel English edition existed until 2026-07-30 and has been retired, because a lagging translation hands readers outdated rules, which is worse than none.
-
-### Architecture
-
-Two layers, loaded on demand. The **persona layer** holds 10 blocks covering voice, interaction style and topics, and is loaded for ordinary conversation. The **mind engine** holds 8 modules covering core mental models, decision heuristics, expression DNA, answer workflow, intellectual lineage, internal tensions, source tracing and framework-conflict arbitration, and is loaded only for deep work.
-
-On top of that: 16 core design principles every profile must follow, and 17 reference files covering the 10-step distillation workflow, five subject types, four advisor positionings, validation, an anti-pattern library, and updating from live public sources.
-
-### Added 2026-07-30
-
-- **The persona has an on/off switch** (principle 16). Load it for judgment, interaction, tone and value trade-offs; take it off for precise facts, math and code. Loading an expert persona measurably lowers factual accuracy and longer personas hurt more, so the principle ships with a required architecture rather than a slogan: a neutral tool verifies first, then the persona interprets. The persona layer never fills in facts by itself.
-- **Collaborative correction outranks one-way simulation** (principle 14). When the subject is reachable, v1 stays marked "pending the subject's own correction". Simulation finds gaps; it never replaces the subject pointing at a line and saying "that is not how I would put it". Corrections become principles, never fixed lines.
-- **Cases stay out of the engine, rules go in** (principle 15). Real cases and client details serve as de-identified stress tests or source evidence only.
-- **Identification-style validation.** When the subject cannot articulate what feels off, give three variants and ask which sounds most like them. Choosing is far easier than scoring, and the follow-up ("what is wrong with the other two") surfaces more than the original question.
-- **Cross-turn memory and factual correctness are tested separately.** Persona similarity never offsets a wrong fact or an over-reached commitment.
-- **Reverse evidence collection.** For subjects with no public criticism to draw on, three reverse-evidence sources plus seven safeguards against the subject's own narrative filtering the material a second time. The method lives in the author's tacit-knowledge extraction skill and is not included in this repo; this skill calls it.
-
-MIT licensed. Fork it and rewrite it into your own notes.
