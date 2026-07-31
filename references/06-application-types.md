@@ -224,7 +224,7 @@
 - Cheatsheet
 - Scope limits
 
-第二階段才進 `02-distillation-workflow.md`，把來源底座中穩定、可追溯、反覆出現的模式提煉成人格層與思維層。
+第二階段才進 `02-distillation-workflow.md`，把來源底座中穩定、可追溯、反覆出現的模式編譯成十區塊人格設定檔。
 
 ### 安全聲明範本
 
