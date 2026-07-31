@@ -90,3 +90,5 @@
 ## 作者
 
 江昱德（Jiang Yude）—— 隱性知識提煉師 / AI 知識架構師 / 數位分身小聚 發起人
+
+[個人官網](https://jiangyude.com/) · [Threads](https://www.threads.com/@jiang_yude_coach)
